@@ -19,7 +19,7 @@ def order(request):
                 filled_form.cleaned_data['size'],
                 filled_form.cleaned_data['topping1'],
                 filled_form.cleaned_data['topping2'],)
-            new_form = PizzaForm()
+            filled_form = PizzaForm()
         else:
             created_pizza_pk = None
             note = 'Pizza order has failed. Try again.'
